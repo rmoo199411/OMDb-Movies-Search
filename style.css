@@ -8,6 +8,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 
@@ -16,6 +17,7 @@ body{
 }
 
 .OMDb{
+    padding:0 15px;
     height: 150px;
     font-size: 40px;
     color: aliceblue;
@@ -36,15 +38,14 @@ body{
 }
 
 .searchForm{
-    width: 400px;
+    width: 390px;
     display: flex;
-    /* background-color: #ffe483; */
     border-radius: 15px;    
 }
 
 .searchForm input{
     height: 30px;
-    width: 330px;
+    width: 300px;
     border-radius: 15px;
     background-color: #b2b5b5af;
     font-weight: 800;    
@@ -166,6 +167,7 @@ body{
     margin-top: 10px;
 }
 
+/* 錯誤卡 */
 .errorCard{
     flex-direction: column;
     width: 350px;
@@ -173,7 +175,8 @@ body{
     color: red;
     background-color: #fff;
     margin-top: 50px;
-
+    border-radius: 15px;
+    box-shadow: -8px 8px 10px 8px rgba(0, 0, 0, 0.688);
 }
 
 .errorCard h1{
@@ -183,4 +186,20 @@ body{
 .errorCard p{
     font-size: 20px;
     margin-top: 20px;
+}
+
+
+
+@media screen and (max-width: 780px) {
+    .movieDetail{
+        flex-direction: column;
+        width: 400px;
+    } 
+
+    .movieDetail .introduction{
+        width: 350px;
+        margin-left: 0;
+        margin-top: 30px;
+    }
+    
 }
