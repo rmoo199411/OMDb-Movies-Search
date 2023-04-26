@@ -11,7 +11,7 @@ submitBtn.addEventListener('click', async function(){
     const textValue = shearchText.value
 
     try{
-       const response = await fetch(`http://www.omdbapi.com/?apikey=4f4e8462&s=${textValue}`)
+       const response = await fetch(`https://www.omdbapi.com/?apikey=4f4e8462&s=${textValue}`)
        const jsonData = await response.json()
 
        if(jsonData.Response == "True"){
@@ -43,7 +43,7 @@ submitBtn.addEventListener('click', async function(){
                     displayList.innerText = ''
                     
                     try{
-                        const responseDetail = await fetch(`http://www.omdbapi.com/?apikey=4f4e8462&i=${jsonData.Search[i].imdbID}&plot=full`)
+                        const responseDetail = await fetch(`https://www.omdbapi.com/?apikey=4f4e8462&i=${jsonData.Search[i].imdbID}&plot=full`)
                         const jsonDataDetail = await responseDetail.json()
                         displayList.innerHTML = `
                         <div class="movieDetail center">
