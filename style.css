@@ -114,6 +114,7 @@ body{
     padding: 10px;
     border-radius: 10px;
     margin-top: 10px;
+    width: 300px;
 }
 
 .title{
@@ -150,6 +151,12 @@ body{
     box-shadow: -8px 8px 10px 8px rgba(0, 0, 0, 0.688);
 }
 
+.movieDetail .img img{
+    width: 300px;
+    height: 430px;
+    object-fit: cover; 
+}
+
 
 .movieDetail div{
     width: 300px;
@@ -157,4 +164,23 @@ body{
 
 .movieDetail p { 
     margin-top: 10px;
+}
+
+.errorCard{
+    flex-direction: column;
+    width: 350px;
+    height: 200px;
+    color: red;
+    background-color: #fff;
+    margin-top: 50px;
+
+}
+
+.errorCard h1{
+    letter-spacing: 5px;    
+}
+
+.errorCard p{
+    font-size: 20px;
+    margin-top: 20px;
 }
