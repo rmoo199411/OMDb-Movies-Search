@@ -65,6 +65,12 @@ body{
     
 }
 
+.searchForm input:focus{
+    background-color: #ffffff;
+    box-shadow: -10px 10px 10px 8px rgba(0, 0, 0, 0.452)
+    
+}
+
 .searchForm a{
     height: 30px;
     width: 60px;

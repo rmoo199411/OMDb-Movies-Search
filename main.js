@@ -1,12 +1,21 @@
 const shearchText = document.getElementById('shearchText')
-
-
 const submitBtn = document.getElementById('submitBtn')  
-
 const displayList = document.getElementById('displayList')  
 const moviePosters = document.getElementsByClassName('moviePoster')
 
 submitBtn.addEventListener('click', async function(){
+    searchMovies()
+})
+
+// 案enter送出
+shearchText.addEventListener('keyup', async function(event){
+    if(event.keyCode === 13){
+        searchMovies();
+    }
+})
+
+// 搜尋函式
+async function searchMovies(){
     displayList.innerText = ''
     const textValue = shearchText.value
 
@@ -83,6 +92,4 @@ submitBtn.addEventListener('click', async function(){
     catch (error) {
         console.log(error);
     }
-})
-
-
+}
