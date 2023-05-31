@@ -84,7 +84,7 @@ async function searchMovies(){
     // 搜尋失敗
             displayList.innerHTML += `            
             <div class="errorCard center">
-                <h1>Error ! !</h1>
+                <h1>Error ! ! !</h1>
                 <p><b>result</b> : ${jsonData.Error}</p>
             </div>`
         }
